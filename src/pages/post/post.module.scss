@@ -1,1 +1,51 @@
-// TODO
+.article {
+    
+    ul {
+        display: block;
+        list-style: none;
+        margin-top:1.5rem;
+        
+        > li {
+            display: inline;
+            font-size:0.875rem;
+        }
+
+        li + li {
+            margin-left:1.5rem;
+        }
+
+        & svg {
+            margin-right: 0.5rem;
+        }
+    }
+
+    .content {
+        display: block;
+        margin-top:4rem;
+
+        a {
+            color: var(--hightlight);
+        }
+
+        p, span, a, ul {
+            font-size:1.125rem;
+            line-height:1.8;
+            margin: 1.8rem 0;
+        }
+    }
+    
+}
+
+
+.title {
+    font-weight: 700;
+    font-size:3rem;
+    display: flex;
+    color: var(--heading)
+}
+
+.banner {
+    height:25rem;
+    width:100%;
+    object-fit: cover;
+}
