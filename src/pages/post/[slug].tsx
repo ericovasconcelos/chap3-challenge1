@@ -12,7 +12,6 @@ import { RichText } from 'prismic-dom';
 
 import Prismic from '@prismicio/client';
 import { useRouter } from 'next/router';
-import { useEffect } from 'react';
 import Link from 'next/link';
 import { UtterancesComments } from '../../components/Header/UtteranceComments';
 
@@ -65,18 +64,6 @@ export default function Post({ post, previousPost, nextPost, preview }: PostProp
     return p + headingTotal + wordsTotal;
   }, 0);
   const readTime = Math.ceil(totalWords / 200);
-
-  useEffect(() => {
-    // let script = document.createElement("script");
-    // let anchor = document.getElementById("inject-comments-for-uterances");
-    // script.setAttribute("src", "https://utteranc.es/client.js");
-    // script.setAttribute("crossorigin", "anonymous");
-    // script.setAttribute("async", "true");
-    // script.setAttribute("repo", "ericovasconcelos/chap3-challenge1");
-    // script.setAttribute("issue-term", "pathname");
-    // script.setAttribute("theme", "github-dark");
-    // anchor.appendChild(script);
-  }, []);
 
   return (
     <>
