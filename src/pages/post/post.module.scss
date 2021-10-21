@@ -1,4 +1,9 @@
 .article {
+
+    hr {
+        border: 1px solid var(--body);
+        opacity: 0.1;
+    }
     
     ul {
         display: block;
@@ -36,6 +41,14 @@
     
 }
 
+.lastEdited {
+    display:block;
+    margin-top:1rem;
+    color:var(--info);
+    font-weight:400;
+    font-style:italic;
+}
+
 
 .title {
     font-weight: 700;
@@ -49,3 +62,26 @@
     width:100%;
     object-fit: cover;
 }
+
+.footer {
+    display:flex;
+    justify-content:space-between;
+    padding-top:3rem;
+    margin-bottom:5rem;
+
+    p {
+        font-size:1.125rem;
+    }
+
+    .nextPostStyle {
+        text-align:right;
+    }
+
+    a {
+        display:block;
+        color:var(--hightlight);
+        font-size:1rem;
+        margin-top:0.5rem;
+    }
+}
+
